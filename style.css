@@ -1,6 +1,10 @@
-header {
+h1 {
     text-align: center;
     background-color: gray;
     color: white;
     font-size: 45;
+}
+
+button {
+    text-align: right;
 }

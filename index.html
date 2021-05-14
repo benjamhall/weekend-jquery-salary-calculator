@@ -13,19 +13,74 @@
     <script src="client.js"></script>
     
 </head>
-    <!--<header>Salary Calculator</header>> -->
-    <table>
-        <thead>
-            <tr>
-                <th>Salary Calculator</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <tb>Add Employee</tb>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Salary Calculator</h1>
+    <section>
+        <main>
+            <h2>Add Employee</h2>
+            <div> 
+                <label for="firstName"></label>
+                <input type="firstName" placeholder="First Name">
+                <label for="lastName"></label>
+                <input type="lastName" placeholder="Last Name">
+                <label for="idIn"></label>
+                <input type="idIn" placeholder="ID">
+                <label for="titleIn"></label>
+                <input type="titleIn" placeholder="Title">
+                <label for="annualSalary"></label>
+                <input type="annualSalary" placeholder="Annual Salary">
+            </div>
+
+            <button>Submit</button>
+            <h2>Employees</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Annual Salary</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jen</td>
+                        <td>Barber</td>
+                        <td>4521</td>
+                        <td>Team Lead</td>
+                        <td>$80,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Maurice</td>
+                        <td>Moss</td>
+                        <td>8724</td>
+                        <td>Support Team</td>
+                        <td>$58,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Roy</td>
+                        <td>Smith</td>
+                        <td>9623</td>
+                        <td>Quality Assurance</td>
+                        <td>$48,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </section>
+    
 <body>
     
 </body>
