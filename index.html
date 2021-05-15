@@ -17,15 +17,15 @@
             <h2>Add Employee</h2> <!--Input form that adds employee information including first name, last name, ID, job title, and annual salary-->
             <div> 
                 <label for="firstName"></label>
-                <input class= "input" type="firstName" placeholder="First Name" id="firstName">
+                <input class= "input" type="firstName" placeholder="First Name" id="fName">
                 <label for="lastName"></label>
-                <input class= "input" type="lastName" placeholder="Last Name" id="lastName">
+                <input class= "input" type="lastName" placeholder="Last Name" id="lName">
                 <label for="idIn"></label>
-                <input class= "input" type="idIn" placeholder="ID" id="idNumber">
+                <input class= "input" type="idIn" placeholder="ID" id="idNum">
                 <label for="titleIn"></label>
-                <input class= "input" type="titleIn" placeholder="Title" id="jobTitle">
+                <input class= "input" type="titleIn" placeholder="Title" id="jTitle">
                 <label for="annualSalary"></label>
-                <input class= "input" type="annualSalary" placeholder="Annual Salary" id="annualSalary">
+                <input class= "input" type="annualSalary" placeholder="Annual Salary" id="aSalary">
             </div>
             <button id="submitButton">Submit</button>
     </section>
@@ -34,7 +34,7 @@
         <main>  
             <h2>Employees</h2>
             <table class="table table-bordered table-striped">
-                <thead id="table head" class="thead">
+                <thead id="tableHead" class="thead">
                     <tr>
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
@@ -44,8 +44,18 @@
                         <th scope="col"></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!--<tr>
+                <tbody id="tableBody">
+                    
+                    <!--<tr class="addRow" id="employeeData">
+                    </tr> -->
+                </tbody>
+            </table>
+        </main>
+    </section>
+</body>
+</html>
+
+<!--<tr>
                         <td>Jen</td>
                         <td>Barber</td>
                         <td>4521</td>
@@ -69,17 +79,3 @@
                         <td>$48,000</td>
                         <td></td>
                     </tr> -->
-                    <tr class="addRow" id="employeeData">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-    </section>
-</body>
-</html>
