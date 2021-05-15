@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.js"></script>
-    
+    <title>Document</title>
 </head>
+<body>
     <h1>Salary Calculator</h1>
-    <section>
-        <main>
-            <h2>Add Employee</h2>
+    <section >
+            <h2>Add Employee</h2> <!--Input form that adds employee information including first name, last name, ID, job title, and annual salary-->
             <div> 
                 <label for="firstName"></label>
-                <input type="firstName" placeholder="First Name">
+                <input class= "input" type="firstName" placeholder="First Name" id="firstName">
                 <label for="lastName"></label>
-                <input type="lastName" placeholder="Last Name">
+                <input class= "input" type="lastName" placeholder="Last Name" id="lastName">
                 <label for="idIn"></label>
-                <input type="idIn" placeholder="ID">
+                <input class= "input" type="idIn" placeholder="ID" id="idNumber">
                 <label for="titleIn"></label>
-                <input type="titleIn" placeholder="Title">
+                <input class= "input" type="titleIn" placeholder="Title" id="jobTitle">
                 <label for="annualSalary"></label>
-                <input type="annualSalary" placeholder="Annual Salary">
+                <input class= "input" type="annualSalary" placeholder="Annual Salary" id="annualSalary">
             </div>
+            <button id="submitButton">Submit</button>
+    </section>
 
-            <button>Submit</button>
+    <section>
+        <main>  
             <h2>Employees</h2>
-            <table class="table table-striped">
-                <thead>
+            <table class="table table-bordered table-striped">
+                <thead id="table head" class="thead">
                     <tr>
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
@@ -44,7 +45,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!--<tr>
                         <td>Jen</td>
                         <td>Barber</td>
                         <td>4521</td>
@@ -67,8 +68,8 @@
                         <td>Quality Assurance</td>
                         <td>$48,000</td>
                         <td></td>
-                    </tr>
-                    <tr>
+                    </tr> -->
+                    <tr class="addRow" id="employeeData">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -80,8 +81,5 @@
             </table>
         </main>
     </section>
-    
-<body>
-    
 </body>
 </html>
