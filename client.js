@@ -1,5 +1,7 @@
 console.log('js loaded');
 
+let totalSalary = 0;
+let monthlySalary = 0;
 
 let monthlyCosts = []; 
 
@@ -9,8 +11,6 @@ $(document).ready(readyNow);
 function readyNow() {  //when submit button is clicked the input value is pushed to the table
     console.log('jQuery ready');
     //console.log(monthlyCosts);
-    
-    //arrayLog();
 
     //click listeners
     $('#submitButton').on('click', collectInfo)
@@ -23,9 +23,6 @@ function readyNow() {  //when submit button is clicked the input value is pushed
 
 } //end readyNow
 
-// function arrayLog(){
-//     console.log(monthlyCosts);
-// }
 
 function collectInfo(){  //function to add employee info to the table
     console.log('submit button works');
@@ -44,13 +41,12 @@ function collectInfo(){  //function to add employee info to the table
             <td>${lastName}</td>
             <td>${idNumber}</td>
             <td>${jobTitle}</td>
-            <td>${annualSalary}</td>
+            <td class="info">${annualSalary}</td>
             <td>
                 <button class="deleteBtn">Delete</button>
             </td>
     </tr>
     `);
-
 
     //push to monthly costs array
     return monthlyCosts.push(annualSalary);
@@ -67,20 +63,19 @@ function clearInput(){
     $('#aSalary').val('');
 }//end clearInput
 
-function deleteRow(){ //delete the whole row in the table
+function deleteRow(){ //delete the whole row in the table, if exceeds 20k then update
     console.log('delete button works');
 
     //delete the whole row
     $(this).closest('.tableRow').empty()
+
 }
 
 // calculate monthly cost and append to DOM, if it is over 20k flag red
 function monthlySal(){
     console.log('monthly Salary is showing up');
 
-    let totalSalary = 0;
-    let monthlySalary = 0;
-
+    //loop through monthlyCosts array and add up numbers to get totalSalary
     for(i=0; i< monthlyCosts.length; i++){
         totalSalary += Number(monthlyCosts[i])
         //console.log(totalSalary);
