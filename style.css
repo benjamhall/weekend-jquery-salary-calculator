@@ -8,3 +8,7 @@ h1 {
 button {
     text-align: right;
 }
+
+.highlight {
+    background-color: red;
+}
