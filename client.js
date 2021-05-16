@@ -56,18 +56,6 @@ function collectInfo(){  //function to add employee info to the table
     return monthlyCosts.push(annualSalary);
     //return console.log(monthlyCosts);
     
-    
-    //totalSalary += +(aSalary);
-    //monthlySal();
-
-    
-
-    //if any of the inputs are blank to return 
-    // if (firstName === '' || lastName === '' || idNumber === '' || jobTitle === '' || annualSalary === ''){
-    //     alert('All the inputs are not filled out');
-    //     return false;
-    // }
-
 } //end collectInfo function 
 
 function clearInput(){
