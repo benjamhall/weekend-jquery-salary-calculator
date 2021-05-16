@@ -27,9 +27,9 @@ function collectInfo(){  //function to add employee info to the table
     let jobTitle = $('#jTitle').val();
     let annualSalary = $('#aSalary').val();
 
-
+    // Add input values to the DOM
     $('#tableBody').append(`
-        <tr>
+        <tr class="tableRow">
             <td>${firstName}</td>
             <td>${lastName}</td>
             <td>${idNumber}</td>
@@ -40,19 +40,27 @@ function collectInfo(){  //function to add employee info to the table
             </td>
     </tr>
     `);
+
+    //clear input
+    $('#fName').val('');
+    $('#lName').val('');
+    $('#idNum').val('');
+    $('#jTitle').val('');
+    $('#aSalary').val('');
+
+
+    //if any of the inputs are blank to return 
+    // if (firstName === '' || lastName === '' || idNumber === '' || jobTitle === '' || annualSalary === ''){
+    //     alert('All the inputs are not filled out');
+    //     return false;
+    // }
+
 } //end collectInfo function 
 
-function deleteRow(){
+function deleteRow(){ //delete the whole row in the table
     console.log('delete button works');
 
     //delete the whole row
-    $(this).parent().remove()
+    $(this).closest('.tableRow').empty()
 }
 
-
-// function addRow(){
-//     rowNumber ++
-    
-// }
-
-//${ employeeInfo };
