@@ -90,4 +90,4 @@ function monthlySal(){
         $('#monthlyCost').addClass('highlight')
     }//adds red background
     //return console.log(monthlySalary);
-}       
+}      

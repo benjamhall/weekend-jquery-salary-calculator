@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR SALARY Calc</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <h1>Salary Calculator</h1>
+    <section>
+        <!-- FORM AREA -->
+        <label for ="firstName">First Name</label>
+        <input class="employeeInput" id="firstName" type="text" placeholder="First Name">
+
+        <label for="lastName">Last Name</label>
+        <input class="employeeInput" id="lastName" type="text" placeholder="Last Name">
+
+        <label for="idNum">ID Number</label>
+        <input class="employeeInput" id="idNum" type="number" placeholder="ID Number">
+
+        <label for="Title">Job Title</label>
+        <input class="employeeInput" id ="Title" type="text" placeholder="Job Title">
+
+        <label for="salary">Annual Salary</label>
+        <input class="employeeInput" id="salary" type="number" placeholder="Annual Salary">
+
+        <button id="submit"></button>
+    </section>
+    <main>
+        <!--Data for existing employees-->
+        <table> 
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID Number</th>
+                    <th>Title</th>
+                    <th>Salary</th>
+                    <th>DELETE?</th>
+                </tr>
+            </thead>
+            <tbody id="target">
+                <!--JQUery will put stuff here-->
+                <!--<tr>
+                    <td>Dane</td>
+                    <td>Smith</td>
+                    <td>2</td>
+                    <td>Instructor</td>
+                    <td>1</td>
+                    <td>
+                        <button>DELETE</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </main>
+    <section>
+        <h3 id="total">Total Monthly: <span id="total">$0</span></h3>
+    </section>
+</body>
+</html>
